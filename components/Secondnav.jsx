@@ -5,7 +5,7 @@ import { BsSearch } from "react-icons/bs";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import Image from "next/image";
 import Link from "next/link";
-// import melvislogo from "./africa.png";
+import melvislogo from "./public/africa.png";
 import StaggeredDropDown from "../components/dropdown";
 
 export default function Secondnav() {
@@ -34,8 +34,8 @@ export default function Secondnav() {
         {/* Logo */}
         <Link href="/">
           <Image
-            src= './africa.png'
-            alt="Bundle4Africa"
+            src={melvislogo}
+            alt="Melvis Logo"
             width={100}
             height={50}
             priority
