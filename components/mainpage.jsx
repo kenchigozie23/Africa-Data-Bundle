@@ -23,7 +23,7 @@ export default function Mainpage() {
   };
 
   return (
-    <section className="w-full min-h-screen flex flex-col md:flex-row items-center justify-center px-6 md:px-16 bg-gray-50">
+    <section className="w-full min-h-screen flex flex-col sm:flex-row items-center justify-center px-6 md:px-16 bg-gray-50">
       {/* Text Section */}
       <motion.div
         initial="hidden"
@@ -43,7 +43,7 @@ export default function Mainpage() {
         </p>
 
         {/* Buttons */}
-        <div className="flex flex-col md:flex-row md:space-x-4 space-y-4 md:space-y-0">
+        <div className="flex flex-row md:flex-row md:space-x-4 space-y-4 md:space-y-0 items-center al justify-center">
           <motion.div
             initial="hidden"
             animate="visible"
@@ -51,7 +51,7 @@ export default function Mainpage() {
           >
             <Button
               asChild
-              className="w-full md:w-auto text-white bg-purple-900 hover:bg-purple-700 transition-all duration-300"
+              className="w-full md:w-auto text-white bg-purple-900 hover:bg-purple-700 transition-all duration-300 mt-4 md:mt-0"
             >
               <Link href="/login">Login</Link>
             </Button>
@@ -63,9 +63,9 @@ export default function Mainpage() {
           >
             <Button
               asChild
-              className="w-full md:w-auto text-white bg-green-700 hover:bg-green-600 transition-all duration-300"
+              className="w-full md:w-auto text-white bg-green-700 hover:bg-green-600 transition-all duration-300 mx-3"
             >
-              <Link href="/signup">Sign Up</Link>
+              <Link href="/signup">Register</Link>
             </Button>
           </motion.div>
         </div>
