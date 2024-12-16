@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+
+
 export default {
     darkMode: ["class"],
     content: [
@@ -8,6 +10,10 @@ export default {
   ],
   theme: {
   	extend: {
+		backgroundImage: {
+			'hero': "url('/data.svg')",
+			
+		  },
   		colors: {
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',

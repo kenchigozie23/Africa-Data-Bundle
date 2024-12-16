@@ -20,12 +20,12 @@ const StaggeredDropDown = () => {
   }, []);
 
   return (
-    <div className="p-0  flex items-center justify-center bg-white">
+    <div className="p-0  flex items-center justify-center bg-purple-900 text-white">
       <motion.div animate={open ? "open" : "closed"} className="relative">
         <button
           onMouseEnter={() => setOpen(true)}
           onClick={(e) => e.stopPropagation()}
-          className="flex items-center gap-2 px-3 py-2 rounded-md text-black bg-white  transition-colors"
+          className="flex items-center gap-2 px-3 py-2 rounded-md text-white bg-purple-900  transition-colors"
         >
           <span className="font-medium text-sm">Categories</span>
           <motion.span variants={iconVariants}>
@@ -39,10 +39,10 @@ const StaggeredDropDown = () => {
           style={{ originY: "top", translateX: "-50%" }}
           className="flex flex-col gap-2 p-2 rounded-lg bg-white shadow-xl absolute top-[120%] left-[50%] w-48 overflow-hidden"
         >
-          <Option setOpen={setOpen} Icon={FiEdit} text="Edit" />
-          <Option setOpen={setOpen} Icon={FiPlusSquare} text="Duplicate" />
-          <Option setOpen={setOpen} Icon={FiShare} text="Share" />
-          <Option setOpen={setOpen} Icon={FiTrash} text="Remove" />
+          <Option setOpen={setOpen} Icon={FiEdit} text="Privacy Policy" />
+          <Option setOpen={setOpen} Icon={FiPlusSquare} text="Terms of Service" />
+          <Option setOpen={setOpen} Icon={FiShare} text="Account Deletion" />
+          <Option setOpen={setOpen} Icon={FiTrash} text="Giveaway policy" />
         </motion.ul>
       </motion.div>
     </div>
