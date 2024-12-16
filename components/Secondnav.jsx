@@ -34,8 +34,8 @@ export default function Secondnav() {
         {/* Logo */}
         <Link href="/">
           <Image
-            src={'./africa.png'}
-            alt="Melvis Logo"
+            src= './africa.png'
+            alt="Bundle4Africa"
             width={100}
             height={50}
             priority
