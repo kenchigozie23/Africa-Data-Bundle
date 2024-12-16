@@ -51,7 +51,7 @@ export default function Mainpage() {
           >
             <Button
               asChild
-              className="w-full md:w-auto text-white bg-purple-900 hover:bg-purple-700 transition-all duration-300 mt-4 md:mt-0"
+              className="w-full md:w-auto text-white bg-purple-900 hover:bg-purple-700 transition-all duration-300 mt-4 md:mt-0  mr-3"
             >
               <Link href="/login">Login</Link>
             </Button>
@@ -63,7 +63,7 @@ export default function Mainpage() {
           >
             <Button
               asChild
-              className="w-full md:w-auto text-white bg-green-700 hover:bg-green-600 transition-all duration-300 mx-3"
+              className="w-full md:w-auto text-white bg-green-700 hover:bg-green-600 transition-all duration-300 ml-2"
             >
               <Link href="/signup">Register</Link>
             </Button>
