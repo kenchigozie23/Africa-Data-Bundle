@@ -5,7 +5,7 @@ import { BsSearch } from "react-icons/bs";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import Image from "next/image";
 import Link from "next/link";
-import melvislogo from "./public/africa.png";
+import melvislogo from "./africa.png";
 import StaggeredDropDown from "../components/dropdown";
 
 export default function Secondnav() {
