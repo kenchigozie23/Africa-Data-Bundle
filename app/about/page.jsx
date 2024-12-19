@@ -1,7 +1,7 @@
 "use client";
 
-import Footer from "@/components/footer";
-import Navbar from "@/components/navclient";
+import Footer from "../components/footer";
+import Navbar from "../components/navclient";
 import { motion } from "framer-motion";
 
 export default function AboutSection() {
