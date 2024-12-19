@@ -1,18 +1,18 @@
 'use client'
 import React, { useState, useEffect } from 'react';
-import Firstnav from "@/components/navbar";
-import Secondnav from '@/components/Secondnav';
-import Mainpage from '@/components/mainpage';
+import Firstnav from "../components/navbar";
+import Secondnav from '../components/Secondnav';
+import Mainpage from '../components/mainpage';
 import SyncLoader from "react-spinners/SyncLoader";
 
-import Cards from '@/components/cards';
-import Carrd from '@/components/Carrd';
-import Offer from '@/components/offer';
-import Services from '@/components/services';
-import Ours from '@/components/Ours';
-import CustomerTestimonialCarousel from '@/components/Ratings';
+import Cards from '../components/cards';
+import Carrd from '../components/Carrd';
+import Offer from '../components/offer';
+import Services from '../components/services';
+import Ours from '../components/Ours';
+import CustomerTestimonialCarousel from '../components/Ratings';
 // import SubscriptionCard from '@/components/Subscription';
-import Footer from '@/components/footer';
+import Footer from '../components/footer';
 // import { SignIn } from '@clerk/nextjs';
 // import BottomNavigation from '@/components/ButtonNavigation';
 
