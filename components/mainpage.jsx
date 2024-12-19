@@ -4,6 +4,10 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import {
+  RegisterLink,
+  LoginLink,
+} from "@kinde-oss/kinde-auth-nextjs/components";
 
 export default function Mainpage() {
   // Variants for text and image
@@ -19,7 +23,11 @@ export default function Mainpage() {
 
   const buttonVariants = {
     hidden: { opacity: 0, y: 100 },
-    visible: { opacity: 1, y: 0, transition: { duration: 1.5, ease: "linear" } },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 1.5, ease: "linear" },
+    },
   };
 
   return (
@@ -38,8 +46,10 @@ export default function Mainpage() {
           Instant Recharge on Bundle 4 Africa
         </p>
         <p className="text-sm md:text-lg text-gray-500 leading-relaxed max-w-lg">
-          Buy Cheap Mobile Data, Airtime, Pay Electricity Bills, TV Subscriptions,
-          Educational Payments, and Print Recharge Cards & Data Pins.
+          Buy Cheap Mobile Data, Airtime, Pay Electricity Bills, TV
+          Subscriptions, Educational Payments, and Print Recharge Cards & Data
+          Pins.
+          {/* <LoginLink>Sign in</LoginLink> */}
         </p>
 
         {/* Buttons */}
@@ -53,7 +63,9 @@ export default function Mainpage() {
               asChild
               className="w-full md:w-auto text-white bg-purple-900 hover:bg-purple-700 transition-all duration-300 mt-4 md:mt-0  mr-3"
             >
-              <Link href="/login">Login</Link>
+              
+                <LoginLink>Sign in</LoginLink>
+             
             </Button>
           </motion.div>
           <motion.div
@@ -65,7 +77,10 @@ export default function Mainpage() {
               asChild
               className="w-full md:w-auto text-white bg-green-700 hover:bg-green-600 transition-all duration-300 ml-2"
             >
-              <Link href="/signup">Register</Link>
+              
+            
+                <RegisterLink>Sign up</RegisterLink>
+             
             </Button>
           </motion.div>
         </div>

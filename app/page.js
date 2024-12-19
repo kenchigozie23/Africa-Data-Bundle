@@ -13,7 +13,9 @@ import Ours from '@/components/Ours';
 import CustomerTestimonialCarousel from '@/components/Ratings';
 // import SubscriptionCard from '@/components/Subscription';
 import Footer from '@/components/footer';
+// import { SignIn } from '@clerk/nextjs';
 // import BottomNavigation from '@/components/ButtonNavigation';
+
 
 
 
@@ -43,6 +45,7 @@ function Home() {
      </div>
      <div>
      <Mainpage/>
+     {/* <SignIn/> */}
      <Cards/>
      <Carrd/>
      <Offer/>
