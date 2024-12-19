@@ -11,31 +11,10 @@ import Offer from '@/components/offer';
 import Services from '@/components/services';
 import Ours from '@/components/Ours';
 import CustomerTestimonialCarousel from '@/components/Ratings';
-import SubscriptionCard from '@/components/Subscription';
+// import SubscriptionCard from '@/components/Subscription';
 import Footer from '@/components/footer';
-// export default function Home() {
-//   return (
-//  <div>
-//     <div className='space-y-2'>
-//       <Firstnav/>
-//       <Secondnav/>
-//     </div>
-//     <div >
-//       <Mainpage/>
-//       <Cards/>
-//       <Carrd/>
-//       <Offer/>
-//       <Services/>
-//       <Ours/>
-//       <CustomerTestimonialCarousel/>
-//       <SubscriptionCard/>
-//       <Footer/>
-//     </div>
-//  </div>
-      
-//   );
+// import BottomNavigation from '@/components/ButtonNavigation';
 
-// }
 
 
 function Home() {
@@ -70,6 +49,7 @@ function Home() {
      <Services/>
      <Ours/>
      <CustomerTestimonialCarousel/>
+     {/* <BottomNavigation/> */}
      {/* <SubscriptionCard/> */}
      <Footer/>
      </div>

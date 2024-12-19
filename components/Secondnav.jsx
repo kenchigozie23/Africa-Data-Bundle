@@ -20,6 +20,14 @@ export default function Secondnav() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const navItems = [
+    { name: "Home", href: "/" },
+    { name: "About", href: "/about" },
+    { name: "Service", href: "/services" },
+    { name: "Contact Us", href: "/contact" },
+  ];
+
+
   return (
     <motion.nav
       className={`fixed w-full top-0 z-20 transition-all duration-300 ${
@@ -44,18 +52,18 @@ export default function Secondnav() {
         </Link>
 
         {/* Desktop Navigation */}
-        <ul className="hidden md:flex space-x-6 items-center text-white font-semibold ">
-          {["Home", "About", "Service", "Contact Us"].map((item, index) => (
-            <motion.li
-              key={index}
-              whileHover={{ scale: 1.1, color: "#6D28D9" }}
-              className="cursor-pointer transition"
-            >
-              <Link href="/">{item}</Link>
-            </motion.li>
-          ))}
-          <StaggeredDropDown />
-        </ul>
+        <ul className="hidden md:flex space-x-6 items-center text-white font-semibold">
+      {navItems.map((item, index) => (
+        <motion.li
+          key={index}
+          whileHover={{ scale: 1.1, color: "#6D28D9" }}
+          className="cursor-pointer transition"
+        >
+          <Link href={item.href}>{item.name}</Link>
+        </motion.li>
+      ))}
+      <StaggeredDropDown />
+    </ul>
 
         {/* Search */}
         <div className="md:flex hidden w-full sm:w-96 rounded-md overflow-hidden">
