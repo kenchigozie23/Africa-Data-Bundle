@@ -1,7 +1,7 @@
 // import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 // import { UserProvider } from '@auth0/nextjs-auth0/client';
-import { UserProvider } from '@auth0/nextjs-auth0/client';
+import Providers from '../components/ProgressBarProvider';
 import { ClerkProvider } from "@clerk/nextjs";
 
 // const geistSans = Geist({
@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
     <html>
     
     <body>
-      {children}
+    <Providers>{children}</Providers>
       
       </body>
   

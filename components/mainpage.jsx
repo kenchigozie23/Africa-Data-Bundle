@@ -61,7 +61,7 @@ export default function Mainpage() {
               className="w-full md:w-auto text-white bg-purple-900 hover:bg-purple-700 transition-all duration-300 mt-4 md:mt-0  mr-3"
             >
               
-              <a href="/api/auth/login">Login</a>
+             <Link href={'/ken'}>Login</Link>
              
             </Button>
           </motion.div>
@@ -76,7 +76,7 @@ export default function Mainpage() {
             >
               
             
-              <a href="/api/auth/login">Login</a>
+              <Link href={'/register'}>Register</Link>
              
             </Button>
           </motion.div>
