@@ -2,7 +2,7 @@
 
 // import BottomNavigation from "../../components/ButtonNavigation";
 // import Footer from "../../components/footer";
-import Navbar from "../../components/navclient";
+// import Navbar from "../../components/navclient";
 import { motion } from "framer-motion";
 import { FaMobileAlt, FaWifi, FaTv, FaPlug, FaSms, FaMoneyBillWave, FaCreditCard, FaExchangeAlt } from "react-icons/fa";
 
@@ -20,7 +20,7 @@ export default function ServiceSection() {
 
   return (
     <section className="bg-gray-100 py-16">
-        <Navbar/>
+     
       <div className="container mx-auto px-4">
         {/* Section Heading */}
         <motion.h2

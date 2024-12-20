@@ -1,6 +1,6 @@
 'use client'
 import React, { useState, useEffect } from 'react';
-import Firstnav from "../components/navbar";
+// import Firstnav from "../components/navbar";
 import Secondnav from '../components/Secondnav';
 import Mainpage from '../components/mainpage';
 import SyncLoader from "react-spinners/SyncLoader";
@@ -40,7 +40,7 @@ function Home() {
       ) : (
         <div >
           <div className=''>
-       <Firstnav/>
+       {/* <Firstnav/> */}
       <Secondnav/>
      </div>
      <div>
