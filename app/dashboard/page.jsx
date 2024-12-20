@@ -29,7 +29,7 @@ const Dashboard = () => {
           <div className="flex items-center space-x-4">
             <div className="relative">
               <div className="flex items-center space-x-2 cursor-pointer bg-gray-100 rounded-full px-4 py-2">
-                <User className="h-5 w-5 text-gray-600" />
+                {/* <User className="h-5 w-5 text-gray-600" /> */}
                 <span className="hidden sm:block text-sm font-medium"><UserButton/></span>
               </div>
             </div>
@@ -46,7 +46,7 @@ const Dashboard = () => {
               <div className="flex items-center justify-between">
                 <div>
                   <p className="text-gray-500 text-sm">Total Balance</p>
-                  <h3 className="text-2xl font-bold text-gray-900">GHC 10,000</h3>
+                  <h3 className="text-2xl font-bold text-gray-900">GHC 1,000</h3>
                 </div>
                 <BarChart3 className="h-8 w-8 text-blue-500" />
               </div>
@@ -55,7 +55,7 @@ const Dashboard = () => {
               <div className="flex items-center justify-between">
                 <div>
                   <p className="text-gray-500 text-sm">Today's Sales</p>
-                  <h3 className="text-2xl font-bold text-gray-900">GHC 25,400</h3>
+                  <h3 className="text-2xl font-bold text-gray-900">GHC 2700</h3>
                 </div>
                 <CreditCard className="h-8 w-8 text-green-500" />
               </div>
@@ -124,19 +124,19 @@ const Dashboard = () => {
                 <tbody className="text-sm">
                   <tr className="border-t">
                     <td className="py-4">Airtime Purchase</td>
-                    <td className="py-4">₦1,000</td>
+                    <td className="py-4">GHC 20</td>
                     <td className="py-4"><span className="px-2 py-1 bg-green-100 text-green-800 rounded-full text-xs">Completed</span></td>
                     <td className="py-4">Today, 2:30 PM</td>
                   </tr>
                   <tr className="border-t">
                     <td className="py-4">Data Bundle</td>
-                    <td className="py-4">GHC 2,500</td>
+                    <td className="py-4">GHC 30</td>
                     <td className="py-4"><span className="px-2 py-1 bg-green-100 text-green-800 rounded-full text-xs">Completed</span></td>
                     <td className="py-4">Today, 1:15 PM</td>
                   </tr>
                   <tr className="border-t">
                     <td className="py-4">Cable TV</td>
-                    <td className="py-4">GHC 6,500</td>
+                    <td className="py-4">GHC 250</td>
                     <td className="py-4"><span className="px-2 py-1 bg-yellow-100 text-yellow-800 rounded-full text-xs">Pending</span></td>
                     <td className="py-4">Today, 11:30 AM</td>
                   </tr>
