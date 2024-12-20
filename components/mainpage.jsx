@@ -4,10 +4,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "../components/ui/button";
-import {
-  RegisterLink,
-  LoginLink,
-} from "@kinde-oss/kinde-auth-nextjs/components";
+
 
 export default function Mainpage() {
   // Variants for text and image
@@ -64,7 +61,7 @@ export default function Mainpage() {
               className="w-full md:w-auto text-white bg-purple-900 hover:bg-purple-700 transition-all duration-300 mt-4 md:mt-0  mr-3"
             >
               
-                <LoginLink>Sign in</LoginLink>
+              <a href="/api/auth/login">Login</a>
              
             </Button>
           </motion.div>
@@ -79,7 +76,7 @@ export default function Mainpage() {
             >
               
             
-                <RegisterLink>Sign up</RegisterLink>
+              <a href="/api/auth/login">Login</a>
              
             </Button>
           </motion.div>

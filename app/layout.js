@@ -1,7 +1,7 @@
 // import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 // import { UserProvider } from '@auth0/nextjs-auth0/client';
-import {AuthProvider} from './AuthProvider';
+import { UserProvider } from '@auth0/nextjs-auth0/client';
 
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",
@@ -20,7 +20,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <AuthProvider>
+    <UserProvider>
     <html>
     
     <body>
@@ -29,7 +29,7 @@ export default function RootLayout({ children }) {
       </body>
   
   </html>
-  </AuthProvider>
+  </UserProvider>
    
   );
 }
