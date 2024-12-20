@@ -12,6 +12,8 @@ import {
   Cable,
   LogOut
 } from 'lucide-react';
+import { UserButton } from '@clerk/nextjs';
+import Link from 'next/link';
 
 const Dashboard = () => {
   const [activeTab, setActiveTab] = useState('home');
@@ -22,13 +24,13 @@ const Dashboard = () => {
       <nav className="bg-white shadow-md px-4 py-3 fixed top-0 w-full z-10">
         <div className="flex items-center justify-between max-w-7xl mx-auto">
           <div className="flex items-center space-x-4">
-            <div className="text-2xl font-bold text-blue-600">VTU Hub</div>
+            <div className="text-2xl font-bold text-blue-600">Bundle4Africa</div>
           </div>
           <div className="flex items-center space-x-4">
             <div className="relative">
               <div className="flex items-center space-x-2 cursor-pointer bg-gray-100 rounded-full px-4 py-2">
                 <User className="h-5 w-5 text-gray-600" />
-                <span className="hidden sm:block text-sm font-medium">John Doe</span>
+                <span className="hidden sm:block text-sm font-medium"><UserButton/></span>
               </div>
             </div>
           </div>
@@ -44,7 +46,7 @@ const Dashboard = () => {
               <div className="flex items-center justify-between">
                 <div>
                   <p className="text-gray-500 text-sm">Total Balance</p>
-                  <h3 className="text-2xl font-bold text-gray-900">₦150,000</h3>
+                  <h3 className="text-2xl font-bold text-gray-900">GHC 10,000</h3>
                 </div>
                 <BarChart3 className="h-8 w-8 text-blue-500" />
               </div>
@@ -53,7 +55,7 @@ const Dashboard = () => {
               <div className="flex items-center justify-between">
                 <div>
                   <p className="text-gray-500 text-sm">Today's Sales</p>
-                  <h3 className="text-2xl font-bold text-gray-900">₦25,400</h3>
+                  <h3 className="text-2xl font-bold text-gray-900">GHC 25,400</h3>
                 </div>
                 <CreditCard className="h-8 w-8 text-green-500" />
               </div>
@@ -82,15 +84,15 @@ const Dashboard = () => {
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 mb-8">
             <button className="flex flex-col items-center justify-center p-4 bg-white rounded-lg shadow-sm hover:bg-blue-50 transition-colors">
               <Phone className="h-8 w-8 text-blue-500 mb-2" />
-              <span className="text-sm text-gray-700">Airtime</span>
+              <span className="text-sm text-gray-700"><Link href={'/topup'}>Airtime</Link></span>
             </button>
             <button className="flex flex-col items-center justify-center p-4 bg-white rounded-lg shadow-sm hover:bg-blue-50 transition-colors">
               <Wifi className="h-8 w-8 text-green-500 mb-2" />
-              <span className="text-sm text-gray-700">Data</span>
+              <span className="text-sm text-gray-700"><Link href={'/data'}>Data</Link></span>
             </button>
             <button className="flex flex-col items-center justify-center p-4 bg-white rounded-lg shadow-sm hover:bg-blue-50 transition-colors">
               <Cable className="h-8 w-8 text-purple-500 mb-2" />
-              <span className="text-sm text-gray-700">Cable TV</span>
+              <span className="text-sm text-gray-700"><Link href={'/coming'}>Cable TV</Link></span>
             </button>
             <button className="flex flex-col items-center justify-center p-4 bg-white rounded-lg shadow-sm hover:bg-blue-50 transition-colors">
               <CreditCard className="h-8 w-8 text-orange-500 mb-2" />
@@ -98,11 +100,11 @@ const Dashboard = () => {
             </button>
             <button className="flex flex-col items-center justify-center p-4 bg-white rounded-lg shadow-sm hover:bg-blue-50 transition-colors">
               <History className="h-8 w-8 text-red-500 mb-2" />
-              <span className="text-sm text-gray-700">History</span>
+              <span className="text-sm text-gray-700"><Link href={'/coming'}>History</Link></span>
             </button>
             <button className="flex flex-col items-center justify-center p-4 bg-white rounded-lg shadow-sm hover:bg-blue-50 transition-colors">
               <Settings className="h-8 w-8 text-gray-500 mb-2" />
-              <span className="text-sm text-gray-700">Settings</span>
+              <span className="text-sm text-gray-700"><Link href={'/coming'}>Setting</Link></span>
             </button>
           </div>
 
@@ -128,13 +130,13 @@ const Dashboard = () => {
                   </tr>
                   <tr className="border-t">
                     <td className="py-4">Data Bundle</td>
-                    <td className="py-4">₦2,500</td>
+                    <td className="py-4">GHC 2,500</td>
                     <td className="py-4"><span className="px-2 py-1 bg-green-100 text-green-800 rounded-full text-xs">Completed</span></td>
                     <td className="py-4">Today, 1:15 PM</td>
                   </tr>
                   <tr className="border-t">
                     <td className="py-4">Cable TV</td>
-                    <td className="py-4">₦6,500</td>
+                    <td className="py-4">GHC 6,500</td>
                     <td className="py-4"><span className="px-2 py-1 bg-yellow-100 text-yellow-800 rounded-full text-xs">Pending</span></td>
                     <td className="py-4">Today, 11:30 AM</td>
                   </tr>
@@ -156,7 +158,7 @@ const Dashboard = () => {
               }`}
             >
               <Home className="h-6 w-6" />
-              <span className="text-xs mt-1">Home</span>
+              <span className="text-xs mt-1"><Link href={'/'}>Home</Link></span>
             </button>
             <button
               onClick={() => setActiveTab('services')}
@@ -165,7 +167,7 @@ const Dashboard = () => {
               }`}
             >
               <CreditCard className="h-6 w-6" />
-              <span className="text-xs mt-1">Services</span>
+              <span className="text-xs mt-1"><Link href={'/services'}>Services</Link></span>
             </button>
             <button
               onClick={() => setActiveTab('history')}
@@ -182,8 +184,8 @@ const Dashboard = () => {
                 activeTab === 'profile' ? 'text-blue-600' : 'text-gray-600'
               }`}
             >
-              <User className="h-6 w-6" />
-              <span className="text-xs mt-1">Profile</span>
+              {/* <User className="h-6 w-6" /> */}
+              <span className="text-xs mt-1"><UserButton/></span>
             </button>
           </div>
         </div>
