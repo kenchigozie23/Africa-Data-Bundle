@@ -6,7 +6,7 @@ import Mainpage from '../components/mainpage';
 import SyncLoader from "react-spinners/SyncLoader";
 
 import Cards from '../components/cards';
-import Carrd from '../components/Carrd';
+// import Carrd from '../components/Carrd';
 import Offer from '../components/offer';
 import Services from '../components/services';
 import Ours from '../components/Ours';
@@ -47,7 +47,7 @@ function Home() {
      <Mainpage/>
      {/* <SignIn/> */}
      <Cards/>
-     <Carrd/>
+     {/* <Carrd/> */}
      <Offer/>
      <Services/>
      <Ours/>
