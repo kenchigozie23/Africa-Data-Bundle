@@ -24,7 +24,7 @@ const Dashboard = () => {
       <nav className="bg-white shadow-md px-4 py-3 fixed top-0 w-full z-10">
         <div className="flex items-center justify-between max-w-7xl mx-auto">
           <div className="flex items-center space-x-4">
-            <div className="text-2xl font-bold text-blue-600">Bundle4Africa</div>
+            <div className="text-2xl font-bold text-blue-600"><Link href={'/'}>Bundle4Africa</Link></div>
           </div>
           <div className="flex items-center space-x-4">
             <div className="relative">

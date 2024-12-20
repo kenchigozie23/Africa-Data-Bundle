@@ -1,7 +1,7 @@
 "use client";
 
-import BottomNavigation from "../../components/ButtonNavigation";
-import Footer from "../../components/footer";
+// import BottomNavigation from "../../components/ButtonNavigation";
+// import Footer from "../../components/footer";
 import Navbar from "../../components/navclient";
 import { motion } from "framer-motion";
 import { FaMobileAlt, FaWifi, FaTv, FaPlug, FaSms, FaMoneyBillWave, FaCreditCard, FaExchangeAlt } from "react-icons/fa";
@@ -55,10 +55,8 @@ export default function ServiceSection() {
         </div>
       </div>
       
-      <BottomNavigation/>
-      <div>
-        <Footer/>
-      </div>
+      {/* <BottomNavigation/> */}
+   
     </section>
   );
 }
